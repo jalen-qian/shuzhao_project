@@ -24,7 +24,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="wrap">
+<div class="wrap" style="background: url(/frontend/web/img/bg2.jpg) no-repeat fixed; background-size: 100%">
     <?php
     NavBar::begin([
         'brandLabel'  => '<img class="header-logo" src="/frontend/web/img/logo.jpeg" />',
@@ -65,7 +65,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container" >
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>

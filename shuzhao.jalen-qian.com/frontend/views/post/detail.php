@@ -131,11 +131,6 @@ use common\models\Comment;
 				  </li>
 				</ul>			
 			</div>
-			
-		
 		</div>
-		
-		
 	</div>
-
 </div>
