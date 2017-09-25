@@ -1,0 +1,117 @@
+*{
+		margin: 0;
+		padding: 0;
+}
+a{
+	text-decoration: none;
+}
+#Header{
+				
+			}
+#nav{
+		width: 100%;
+		height: 80px;
+		position: fixed;
+		background: gray;
+			    
+			}
+#nav .nUl{
+		height: 40px;
+		width: 300px;
+				/*background-color:black;*/
+				/*margin: 0 auto;*/
+		margin-top: 20px;
+		text-align: center;
+		line-height: 40px;
+		float: right;
+			}
+#nav .nUl>li{
+		list-style: none;
+		float: left;
+		height: 40px;
+		width: 120px;
+		background-color:skyblue ;
+		margin-left: 10px;
+			}
+.sub li{
+		list-style: none;
+		float: left;
+		height: 40px;
+		width: 120px;
+		background-color:skyblue ;
+		transform: rotateY(180deg);
+		transition: all 2s;
+		opacity: 0;
+			}
+.nUl>li:hover .sub li{
+		transform:none;
+				opacity: 1;
+				
+			}
+.nUl>li:hover .sub li:nth-child(1){
+		transition-delay: 0ms;
+			}
+.nUl>li:hover .sub li:nth-child(2){
+		transition-delay: 200ms;
+			}
+.nUl>li:hover .sub li:nth-child(3){
+		transition-delay: 400ms;
+			}
+.nUl>li:hover .sub li:nth-child(4){
+				transition-delay: 800ms;
+			}
+.nUl>li .sub li:nth-child(4){
+		transition-delay: 0ms;
+			}
+.nUl>li .sub li:nth-child(3){
+		transition-delay: 200ms;
+			}
+.nUl>li .sub li:nth-child(2){
+		transition-delay: 400ms;
+			}
+.nUl>li .sub li:nth-child(1){
+		transition-delay: 800ms;
+			}
+#Content{
+	height: 600px;
+	/*position:relative;*/
+	background: url(img/dw.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+#content{
+	height: 500px;	
+}
+#content .aul {
+	 border: 1px solid #00ff;
+	 background: url(img/bck.jpg);
+}
+#content .aul ul{
+    margin-left: 200px;
+}
+#content .aul ul li{
+	float: left;
+	width: 110px
+	height:58px;
+	line-height: 58px;
+	list-style: none;
+	font-size: 50px;
+	margin-left:20px;
+	border-bottom: 2px solid transparent ;
+	color: #555555;
+}	
+#Footer{
+	height: 100px;
+	background: blue;
+	text-align: center;
+    padding-top: 100px;
+}
+#Footer #footer{
+	height: 50px;
+	line-height: 50px;
+	background: red;
+	
+}
+#Footer #footer span{
+	margin-left: 100px;
+}

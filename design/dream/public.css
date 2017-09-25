@@ -1,0 +1,20 @@
+#Footer{
+	height: 100px;
+	border: 1px solid gainsboro;
+	/*text-align: center;*/
+    padding-top: 10px;
+    width: 1200px;
+}
+#Footer #footer{
+	height: 50px;
+	line-height: 50px;
+	
+	
+}
+#Footer #footer span{
+	margin-left: 40px;
+}
+#Footer #footer .span1{
+	margin-left: 650px;
+	
+}

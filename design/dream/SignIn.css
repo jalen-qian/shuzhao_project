@@ -1,0 +1,210 @@
+*{
+	margin:0;
+	padding:0;}
+a{
+		text-decoration:none;
+		display:inline-block;}
+#main{
+width:1230px;
+height:500px;
+MARGIN-RIGHT: auto;
+MARGIN-LEFT: auto;
+    }
+div{
+	margin:0 auto;}
+#Header{
+	height:67px;
+	margin-top:20px;
+	padding-top:20px;
+	padding-left:317px;
+	padding-right:100px;
+	box-sizing:border-box;
+	}
+
+
+#Header .logo{
+	height:40px;
+	width:135px;
+	margin-right:1px;
+	float:left;
+	}
+#Header .nav{
+	height:40px;
+	width:750px;
+	/*background-color:purple;*/
+	float:left;
+	}
+#Header .nav span{
+	display:inline-block;
+	height:26px;
+	width:140px;
+	border-left:1px solid #999;
+	padding-left:10px;
+	font-size:16px;
+	line-height:26px;
+}
+#Header .nav a{
+	height:19.2;
+	width:61;
+	font-size:12px;
+	padding-left:10px;
+	font-family:"微软雅黑";
+	line-height:19.2px;
+	margin-top:0px;
+	}
+#Content{
+	height:599.9px;
+    background-color:#FFF;
+	background-image:url(imagine/repeat.PNG);
+		}
+#Content #left{
+	height:500px;
+	width:500px;
+	background-color:red;
+	float:left;
+	margin-top:20px;
+	margin-left:300px;}
+#Content #left img{
+	height:500px;
+	width:500px;}
+#Content #right{
+	height:500px;
+	width:295px;
+	border:1px solid #999;
+	background-color:white;
+	float:left;
+	margin-top:20px;
+	}
+#Content #right .top{
+	height:45px;
+	width:295px;
+}
+#Content #right .top .erweima{
+	height:45px;
+	width:147.5px;
+	display: inline-block;
+	float:left;
+	text-align:center;
+	line-height:45px;
+	}
+#Content #right .top span:hover{
+	/*color:red;*/
+	background-color:deepskyblue;
+	
+}
+#Content #right .top .youxiang{
+	height:45px;
+	width:147.5px;
+	text-align:center;
+	line-height:45px;
+	float:right;}
+#Content #right .login{
+	height:403px;
+	width:295px;
+	}
+#Content #right input[type="text"]{
+		height:40px;
+		width:230px;
+	    
+		
+		}	
+#Content #right input[type="password"]{
+		height:40px;
+		width:230px;
+		
+		}
+#Content #right  .xxx {
+	float:left;
+	margin-top:15px;
+	font-size:12px;
+}
+#Content #right  .ccc{
+	float:right;
+	margin-right:41px;	
+	font-size:12px;} 
+#Content #right  .xxx input[type="checkbox"]{
+    height:15px;
+    width:15px;
+	margin-left:31px;
+	cursor:inherit;
+		}
+#Content #right  .wu{
+	margin-top:70px;
+    text-align: center;
+	}	
+#Content #right  .wu	input[type="submit"]{
+	height:40px;
+	width:100px;
+	background: green;
+	}
+#Content #right  .total{
+	height:40px;
+	width:237px;;
+	line-height:40px;
+	font-size:12px;
+    }
+#Content #right  img{
+	height:40px;
+	width:230px;
+	float:left;
+	
+		}
+#Content #right  a{
+	height:30px;
+	width:70px;
+	text-align:center;
+	font-size:12px;
+	
+	
+	margin-left:31px;}
+#Content #right  .bottom{
+	margin-left:49px;
+	margin-top:32px;
+	font-size:12px;
+	}
+#Content #right  .bottom ul li{
+	
+	}	
+
+p{
+	display:inline-block;}
+#Footer{
+	height:44px;
+		}
+#Footer .hehe{
+	width:1000px;
+	margin-left:300px;
+	}	
+#Footer .bb{
+	height:44px;
+	width:122px;
+	display:inline-block;
+	margin-right:22px;
+	}
+#Footer .bb img{
+	height:44px;
+	width:122px;
+	display:inline-block;
+	}
+#Footer .w{
+	height:44px;
+	width:800px;
+	display:inline-block;
+	
+}
+#Footer .w .ss{
+	height:21px;
+	width:800px;
+	}
+#Footer .w .ss a{
+	padding-left:12px;
+	font-size:12px;}
+#Footer .w .ss span{
+	font-size:12px;	}
+#Footer .w .dd{
+	height:21px;
+	width:800px;
+	}
+#Footer .w .dd a{
+	padding-left:12px;
+	font-size:12px;}

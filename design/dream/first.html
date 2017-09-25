@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+   <html lang="en">
+    
+   <head>
+   <script type="text/javascript" src="ceshi.js"></script>
+       <meta charset="UTF-8">
+      <title>庄周梦蝶</title>
+      <link rel="stylesheet" href="first.css" type="text/css" />    
+      <script src="first1.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div id="main">
+<div id="Header">
+  <div class="top"></div>
+  <div class="nav">
+   <div class="left"><a href="index.html"><img src="img/zheshilogo.JPG"/></a></div>
+   <div class="right">
+     <form action="" method="post">
+    <span>用户名:</span> <input  class="txt1" name="username" type="text"  placeholder="请输入账号"/> <input id="check" type="checkbox" name="sername" value="value " />自动登录 找回密码
+     <br/>
+     <span>密码: </span>&nbsp;&nbsp;&nbsp;<input class="txt1" name="userword" type="password" placeholder="请输入密码" /> <a target="_self" href="#"><input class="sub1" type="submit"  value="登录"   /></a> <a  href="reg.html"target="_blank"><input type="button"value="注册" /></a>
+     </form></div>
+   </div>
+</div>
+<div id="Content">
+  <div class="x_x_lan">
+  	<ul>
+     <li><a href="first.html">论坛首页</a></li>
+     <li><a href="jiemeng.html" target="_blank">周公解梦</a></li>
+     <li><a href="emeng.html" target="_blank">噩梦来袭</a></li>
+     <li><a href="meimeng.html" target="_blank">美梦成真</a></li>
+     <li><a href="#" target="_blank">梦中小说</a></li>
+     <li><a href="offi_an.html" target="_blank">官方公告</a></li>
+    </ul> 
+  </div>
+  <div class="search_kuang"> 
+         <form action="" method="post">
+		   <div class="search">
+		    <input type="text" class="search_key"  />
+            <select class="si_sri">
+             <option value="threads">帖子</option>
+             <option value="members">用户</option>
+            </select>
+		    <input type="submit"  class="submit" value="搜索"/>
+		    <!--<a href="javascript:onSubmit()"><img src="img/search.jpg" style="cursor:hand" border=0></a>-->
+		   </div>
+		 </form>
+  </div>
+  <div class="sub">
+   <div class="s-left">
+        <div id="wrap">
+          <ul id="content">
+              <li><img src="img/btn.jpg" alt=""></li>
+              <li><img src="img/btn_ba.JPG" alt=""></li>
+              <li><img src="img/ba-animation.jpg" alt=""></li>
+              <li><img src="img/4.jpg" alt=""></li>
+              <li><img src="img/5.jpg" alt=""></li>
+              <li><img src="img3/6.jpg" alt=""></li>
+          </ul>
+          <ul id="tips">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+          </ul>
+         </div>
+      </div>
+   <div class="s-right"> 
+     	<div class="menu">
+             <span>头版头条</span>
+             <div class="emem"></div>
+             <span>梦中壁纸</span>
+             <div class="emem"></div>
+             <span>周公解梦</span>
+             <div class="emem"></div>
+             <span>官方公告</span>
+             <div class="line"></div>
+        </div>
+         <div class="y_c_content">
+         <ul class="main">
+         <li><a href="#">这是头版头条</a></li>
+         <li class="hide">
+         		<a href="#">这是壁纸</a>
+         		<a href="#">这是壁纸</a>
+         		<a href="#">这是壁纸</a>
+         		<a href="#">这是壁纸</a>	
+         </li>
+         <li class="hide"><a href="#">这是周公解梦</a></li>
+         <li class="hide"><a href="publish.html">官方公告</a></li>
+         </ul>
+         </div>
+   </div>
+  </div>
+
+</div>
+<div id="Footer">  
+	<div class="fenlei">
+     <div class="remen"><h2>热门专区</h2></div>	
+     <div class="xuanxiang">
+      <table>
+        <tbody>
+            <tr>
+              <td><div class="dianying"><img src="img/dianying.jpg"/><a href="#">综合论坛</a></div></td>
+              <td ><div class="yinyue"><img src="img/yinyue.jpg"/><a>关于睡眠的音乐</a></div></td>
+              <td><div class="yinyue"><img src="img/yinyue.jpg"/><a>关于梦境的壁纸</a></div></td>
+            </tr>
+            <tr>
+              <td><div class="dianying"><img src="img/dianying.jpg"/><a href="#">关于梦境的电影</a></div></td>
+              <td ><div class="yinyue"><img src="img/yinyue.jpg"/><a>关于睡眠的音乐</a></div></td>
+              <td><div class="yinyue"><img src="img/yinyue.jpg"/><a>综合论坛</a></div></td>
+            </tr>   
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="bott">
+  	 <
+  </div>
+</div>
+</div>
+<script>
+    var wrap = document.getElementById('wrap');
+      var content = document.getElementById('content');
+      var tips = document.getElementById('tips');
+    var aLi = tips.getElementsByTagName('li');
+      var now = 0;
+      //var 
+      for (var i = 0; i < aLi.length; i++) {
+          aLi[0].className = 'active';                //把初始状态定义好
+          content.style.left = 0 +'px';
+          aLi[i].index = i; //自定义属性
+          aLi[i].onclick = function() {
+              now = this.index;
+              play();
+          }
+      }
+ 
+     function play() {
+         for (var j = 0; j < aLi.length; j++) {
+             aLi[j].className = '';
+         }
+         aLi[now].className = 'active';
+ 
+         //this.index = now;                     
+         //content.style.left = -400 * this.index + 'px';
+         startMove(content, {
+             left: -400 * now, 
+         });
+     }
+ 
+    function autoPlay() {
+         now++;
+         if (now == aLi.length) {
+             now = 0;
+         }
+         play();
+     }
+ 
+  var timer = setInterval(autoPlay, 2000);
+     wrap.onmouseover = function(){                  //这里如果把事件绑定到ul上的话，那么鼠标移入，下面对饮的li会不起作用，
+         clearInterval(timer);                       //因为li的层级比较高，所以应该把事件绑定到大的div上
+     }
+     wrap.onmouseout = function(){
+         timer = setInterval(autoPlay,2000);
+         //setInterval(autoPlay,2000);  
+     }
+     //以下是tab选项js代码
+  window.onload=function(){
+  var oMenu=document.querySelectorAll(".menu span");
+  var oMain=document.querySelectorAll(".main li");
+  var oLine=document.querySelector(".line");
+  for(var i=0;i<oMenu.length;i++){
+   oMenu[i].index=i;
+   oMenu[i].onmouseover=function(){
+    var thisIndex=this.index;
+    for(var j=0;j<oMain.length;j++){
+     oMain[j].style.display="none";
+     oMain[thisIndex].style.display="block";
+    }
+    oLine.style.left=thisIndex*+25.70+"%";
+   }
+  }
+ }
+     </script>
+ </body>
+ 
+ </html>

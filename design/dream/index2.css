@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+#main{
+    width:1200px;
+    height:800px;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+    
+   
+}
+#Header .nav{
+	height: 45px;
+	width:1200px;
+	position: fixed;
+	z-index: 1000;
+	
+			}
+#Header .nav1{
+	height: 45px;
+	width:1200px;
+}
+#Header .nav .left{
+	float: left;
+	margin-left: 200px;
+}	
+#Header .nav .right{
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+		}
+#Content{
+	height:100px;
+	width:1200px;
+}
+#Content #cRight{
+	height: 1000px;
+	width: 110px;
+	background: skyblue;
+}

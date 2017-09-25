@@ -1,0 +1,42 @@
+*{margin:0; padding:0;list-style: none;box-sizing: border-box;}
+a{ text-decoration: none;color: black;}
+#main{width:1000px;height:2000px; MARGIN-RIGHT: auto;MARGIN-LEFT: auto;}
+#Header .top{height:80px ;width:100% ;}
+#Header .nav{height: 80px;width:100% ;}
+#Header .nav span{font-size: 15px;}
+#Header .nav .txt1{height: 20px;width:170px;margin-top: 5px;}
+#Header .nav img{height: 50px;width: 200px;}
+#Header .nav .left{float: left;}
+#Header .nav .right{float: right;}
+#Content{height: 1200px;width: 100%;}
+#Content .x_x_lan{border: 1px solid black;}
+#Content .x_x_lan ul{height: 50px;width: 800px;}
+#Content .x_x_lan ul li{float: left;list-style: none;height: 40px;width: 80px;margin-left: 20px;border-right:1px dashed ;
+line-height: 40px;margin-top: 5px;}
+#Content .search_kuang{margin-top: 10px;}
+#Content .search_kuang .search .search_key{height: 40px;width: 500px;}
+#Content .search_kuang .search .si_sri{height: 40px;width: 70px;}
+#Content .search_kuang .search .submit{height: 40px;width: 70px;}
+#Content .dizhi {height: 25px;width: 100%;}
+#Content .dizhi .idizhi{float: left;padding-top: 3px;}
+#Content .dizhi .idizhi img{height: 20px;width: 25px;}
+#Content .dizhi .adizhi{float: left;font-size: 15px;padding-top: 2px;}
+#Content .neirong {height: 400px;width: 100%;border: 1px solid  gainsboro;}
+#Content .neirong .biaoti{height: 50px;width: 100%;border-bottom:1px solid  gainsboro;padding-top: 8px; padding-left: 8px;}
+#Content .neirong .biaoti a{font-size: 21px;}
+#Content .neirong  h2{text-align: center;}
+#Content .neirong .gaoshi {margin: 10px;}
+#Content .neirong .gaoshi font{font-size: 15px;}
+#Content .neirong .gaoshi font .em1{margin-left: 300px;}
+#Content .neirong .gaoshi font .em2{margin-left: 400px;}
+#Content .neirong .gaoshi font .em3{margin-left: 270px;}
+#Content .neirong .gaoshi font .em4{margin-left: 320px;}
+#Content .fatie{margin-top: 10px;border: 1px solid gainsboro;padding: 5px;}
+#Content .zhen-neirong{height:500px;width:100%;margin-top: 10px;padding: 10px;border: 1px solid gainsboro;}
+#Content .zhen-neirong table{height:500px;width:100%;}
+#Content .zhen-neirong table tbody tr{height:500px;width:100%;text-align: center;}
+#Content .zhen-neirong table tbody tr td{height:30px;width:500px;border-bottom:1px solid  black;display: block;
+margin-left: 200px;}
+#Footer{height: 90px;width: 100%;border: 1px solid gainsboro;}
+#Footer .footer{float: right;margin-top: 10px;margin-right: 10px;}
+#Footer .footer{font-size: 14px;}
