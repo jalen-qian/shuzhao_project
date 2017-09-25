@@ -3,12 +3,12 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\helpers\Html;
+use common\widgets\Alert;
+use frontend\assets\AppAsset;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
-use common\widgets\Alert;
 
 AppAsset::register($this);
 ?>
@@ -24,21 +24,26 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => '魏曦教你学Yii2.0',
-    	'brandOptions'=> ['style'=>'color:yellow;font-size:23px'],
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
+        'brandLabel'  => '<img class="header-logo" src="/frontend/web/img/logo.jpeg" />',
+        'brandOptions'=> ['style'=>'color:yellow;font-size:23px;padding:0;'],
+        'brandUrl'    => Yii::$app->homeUrl,
+        'options'     => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-      
-        ['label' => '关于我们', 'url' => ['/site/about']],
-        ['label' => '联系我们', 'url' => ['/site/contact']],
+        ['label' => '痴人说梦', 'url' => ['/post/index']],
+        ['label' => '梦笔生花', 'url' => ['/site/contact']],
+        ['label' => '云梦闲情', 'url' => ['/site/contact']],
+        ['label' => '梦断魂劳', 'url' => ['/site/contact']],
+        ['label' => '黄粱美梦', 'url' => ['/site/contact']],
+        ['label' => '槐南一梦', 'url' => ['/site/contact']],
+        ['label' => '丹漆随梦', 'url' => ['/site/contact']],
+        ['label' => '鹏游蝶梦', 'url' => ['/site/contact']],
+        ['label' => '大梦方醒', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => '注册', 'url' => ['/site/signup']];
@@ -55,7 +60,7 @@ AppAsset::register($this);
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
+        'items'   => $menuItems,
     ]);
     NavBar::end();
     ?>
@@ -71,7 +76,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; 魏曦教你学Yii2.0 <?= date('Y') ?></p>
+        <p class="pull-left">&copy; 庄周梦蝶v1.0 <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>

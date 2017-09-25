@@ -40,7 +40,7 @@ use common\models\Comment;
 			<br>
 			
 			<div class="content">
-			<?= HTMLPurifier::process($model->content)?>
+			<?= HtmlPurifier::process($model->content)?>
 			</div>
 			
 			<br>
