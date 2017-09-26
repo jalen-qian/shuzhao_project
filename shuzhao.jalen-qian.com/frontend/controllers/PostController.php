@@ -7,7 +7,7 @@ use common\models\Post;
 use common\models\PostSearch;
 use common\models\Tag;
 use common\models\User;
-use Yii;
+use yii;
 use yii\filters\AccessControl;
 
 use yii\filters\VerbFilter;
@@ -34,21 +34,21 @@ class PostController extends Controller
                 ],
             ],
 
-                'access' => [
-                        'class' => AccessControl::className(),
-                        'rules' => [
-                                [
-                                        'actions' => ['index'],
-                                        'allow'   => true,
-                                        'roles'   => ['?'],
-                                        ],
-                                        [
-                                                'actions' => ['index', 'detail'],
-                                                'allow'   => true,
-                                                'roles'   => ['@'],
-                                ],
-                                ],
-                                ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index'],
+                        'allow'   => true,
+                        'roles'   => ['?'],
+                    ],
+                    [
+                        'actions' => ['index', 'detail', 'update','create'],
+                        'allow'   => true,
+                        'roles'   => ['@'],
+                    ],
+                ],
+            ],
 
         ];
     }

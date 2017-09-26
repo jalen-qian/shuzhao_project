@@ -19,12 +19,15 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode(Yii::$app->name) ?></title>
     <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="wrap" style="background: url(/frontend/web/img/bg2.jpg) no-repeat fixed; background-size: 100%">
+<?php
+//<!-- style="background: url(/frontend/web/img/bg2.jpg) no-repeat fixed; background-size: 100%"-->
+?>
+<div class="wrap">
     <?php
     NavBar::begin([
         'brandLabel'  => '<img class="header-logo" src="/frontend/web/img/logo.jpeg" />',
@@ -36,7 +39,7 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => '痴人说梦', 'url' => ['/post/index']],
-        ['label' => '梦笔生花', 'url' => ['/site/contact']],
+        ['label' => '梦笔生花', 'url' => ['/post/create']],
         ['label' => '云梦闲情', 'url' => ['/site/contact']],
         ['label' => '梦断魂劳', 'url' => ['/site/contact']],
         ['label' => '黄粱美梦', 'url' => ['/site/contact']],
